@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "426979555314",
+    "project_id": "cache-emp",
+    "storage_bucket": "cache-emp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:426979555314:android:de4db6b5f0132581e65d6b",
+        "android_client_info": {
+          "package_name": "com.example.cache_employee_management"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd1NWoY0bxQEseKphD2YH1tlx-Vq2y__A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
