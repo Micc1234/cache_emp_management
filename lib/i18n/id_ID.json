@@ -1,0 +1,12 @@
+{
+  "app_title": "Manajemen Karyawan Cache",
+  "logout_confirm_title": "Konfirmasi Logout",
+  "logout_confirm_message": "Apakah Anda yakin ingin logout?",
+  "logout": "Logout",
+  "cancel": "Batal",
+  "rekap_absensi": "Rekap Absensi",
+  "manajemen_karyawan": "Manajemen Karyawan",
+  "inbox_feedback": "Inbox Feedback",
+  "history_absensi": "History Absensi",
+  "izin" : "Inbox Cuti/Izin"
+}

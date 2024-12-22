@@ -1,0 +1,12 @@
+{
+  "app_title": "Cache Employee Management",
+  "logout_confirm_title": "Logout Confirmation",
+  "logout_confirm_message": "Are you sure you want to log out?",
+  "logout": "Logout",
+  "cancel": "Cancel",
+  "rekap_absensi": "Attendance Recap",
+  "manajemen_karyawan": "Employee Management",
+  "inbox_feedback": "Inbox Feedback",
+  "history_absensi": "Attendance History",
+  "izin" : "Leave/Permission Inbox"
+}

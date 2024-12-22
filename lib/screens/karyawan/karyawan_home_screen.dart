@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:cache_employee_management/main.dart';
 import 'package:cache_employee_management/screens/karyawan/feedback_karyawan_screen.dart';
 import 'package:cache_employee_management/screens/karyawan/history_karyawan_screen.dart';
 import 'package:cache_employee_management/screens/karyawan/qr_scan_screen.dart';
@@ -7,6 +8,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/intl.dart';
+import 'package:localization/localization.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class KaryawanHome extends StatefulWidget {
@@ -96,8 +98,8 @@ class _KaryawanHomeState extends State<KaryawanHome> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text('Konfirmasi Logout'),
-          content: Text('Apakah Anda yakin ingin logout?'),
+          title: Text('logout_confirm_title'.i18n()),
+          content: Text('logout_confirm_message'.i18n()),
           actions: [
             TextButton(
               onPressed: () {
@@ -318,8 +320,8 @@ Widget build(BuildContext context) {
                             _buildGridItem(Icons.login, 'Check In', _checkIn),
                             _buildGridItem(Icons.logout, 'Check Out', _checkOut),
                             _buildGridItem(Icons.airplane_ticket,
-                                'Pengajuan Cuti/Izin', () {}),
-                            _buildGridItem(Icons.feedback, 'Feedback', () {
+                                'izin'.i18n(), () {}),
+                            _buildGridItem(Icons.feedback, 'inbox_feedback'.i18n(), () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -330,7 +332,7 @@ Widget build(BuildContext context) {
                                 ),
                               );
                             }),
-                            _buildGridItem(Icons.history, 'History', () {
+                            _buildGridItem(Icons.history, 'history_absensi'.i18n(), () {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
