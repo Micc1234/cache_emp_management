@@ -3,11 +3,13 @@ import 'package:cache_employee_management/screens/karyawan/karyawan_home_screen.
 import 'package:cache_employee_management/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  MobileAds.instance.initialize();
   runApp(MyApp());
 }
 
